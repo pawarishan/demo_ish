@@ -11,7 +11,7 @@ const faqs = [
     { q: "Do you offer integration with third-party SaaS applications?", a: "Yes. We regularly build robust REST API integrations connecting Business Central to CRM platforms (Salesforce, HubSpot), eCommerce engines (Shopify, Magento), logistics providers, and bespoke internal applications." },
     { q: "What kind of support do you provide post-deployment?", a: "We offer comprehensive, long-term support contracts addressing system health monitoring, bug fixes, major release testing (Microsoft pushes updates bi-annually), and continuous architectural refinement as your business scales." },
     { q: "Can you create custom complex reports?", a: "Yes. We build highly complex custom RDLC and Word layout reports — intricate financial statements, robust inventory valuation metrics, or perfectly branded customer invoices. We design the exact intelligence layouts you require." },
-    { q: "How do we get started with IP Solutions?", a: "The first step is a completely free architectural consultation. We'll discuss your current operational bottlenecks, your long-term business goals, and map out a strategy to determine if Business Central and IP Solutions are the right fit for your enterprise." },
+    { q: "How do we get started with IPSOL Technologies?", a: "The first step is a completely free architectural consultation. We'll discuss your current operational bottlenecks, your long-term business goals, and map out a strategy to determine if Business Central and IPSOL Technologies are the right fit for your enterprise." },
 ];
 
 function FAQItem({ q, a }: { q: string, a: string }) {

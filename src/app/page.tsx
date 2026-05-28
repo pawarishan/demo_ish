@@ -4,28 +4,28 @@ import Link from 'next/link';
 
 export default function Home() {
   const services = [
-    { title: "BC Implementation", desc: "End-to-end deployment tailored to your specific operational needs with precision architecture.", icon: "⚙️" },
-    { title: "AL Development", desc: "Expert AL coding to perfectly adapt Business Central to your unique workflows and processes.", icon: "💻" },
-    { title: "API Integrations", desc: "Seamlessly connect Business Central to CRM, eCommerce, and bespoke internal systems.", icon: "🔗" },
-    { title: "Report Development", desc: "Actionable RDLC and Word layout reports for data-driven decision making and clarity.", icon: "📊" },
-    { title: "Data Migration", desc: "Secure and accurate transfer of your legacy data into your new ERP environment.", icon: "🔄" },
-    { title: "NAV to BC Upgrade", desc: "Risk-free transitions from older Dynamics NAV versions to modern cloud Business Central.", icon: "⬆️" },
-    { title: "Support & Maintenance", desc: "Reliable ongoing support to guarantee maximum uptime and continuous improvement.", icon: "🛠️" },
-    { title: "ERP Consulting", desc: "Strategic guidance to align your enterprise software strategy with long-term business growth.", icon: "🧠" }
+    { title: "Microsoft 365 Licenses", desc: "Equip your team with industry-leading productivity apps and secure cloud services.", icon: "☁️" },
+    { title: "Dynamics 365 Licenses", desc: "Unlock the full potential of CRM and ERP applications with precise licensing plans.", icon: "🔑" },
+    { title: "Azure Cloud Solutions", desc: "Scale your infrastructure securely with Microsoft Azure's flexible cloud platform.", icon: "🌐" },
+    { title: "BC Implementation", desc: "End-to-end deployment of Dynamics 365 Business Central tailored to your operations.", icon: "⚙️" },
+    { title: "AL Development", desc: "Expert AL coding to perfectly adapt Business Central to your unique workflows.", icon: "💻" },
+    { title: "API Integrations", desc: "Seamlessly connect Business Central to CRM, eCommerce, and bespoke systems.", icon: "🔗" },
+    { title: "Support & Maintenance", desc: "Reliable ongoing support for your Microsoft licenses and ERP systems.", icon: "🛠️" },
+    { title: "Data Migration & Upgrades", desc: "Securely transition legacy data to the cloud with NAV to BC upgrades.", icon: "🔄" }
   ];
 
   const stats = [
-    { value: "100%", label: "BC Specialization" },
-    { value: "Zero", label: "Post-go-live data loss" },
-    { value: "24/7", label: "Business visibility" },
-    { value: "8+", label: "Service areas" },
+    { value: "100%", label: "Microsoft Focus" },
+    { value: "Seamless", label: "License Provisioning" },
+    { value: "Zero", label: "Data Loss in Migration" },
+    { value: "24/7", label: "Business Visibility" },
   ];
 
   const outcomes = [
-    { title: "Operational Visibility", desc: "Real-time insights across finance, supply chain, and sales from a unified platform.", icon: "👁️" },
-    { title: "Automated Workflows", desc: "Drastically reduce manual data entry and human error with automated business processes.", icon: "⚡" },
-    { title: "Scalable Foundation", desc: "An enterprise-grade architecture that grows flawlessly alongside your business expansion.", icon: "🚀" },
-    { title: "Seamless Integration", desc: "A connected software ecosystem eliminating data silos and redundant applications.", icon: "🔗" }
+    { title: "Cost-Optimized Licensing", desc: "Pay only for what you need with tailored Microsoft license provisioning and audits.", icon: "💡" },
+    { title: "Operational Visibility", desc: "Real-time insights across finance, supply chain, and sales via Business Central.", icon: "👁️" },
+    { title: "Automated Workflows", desc: "Drastically reduce manual data entry and human error with connected Microsoft tools.", icon: "⚡" },
+    { title: "Scalable Foundation", desc: "An enterprise-grade architecture that grows flawlessly alongside your business.", icon: "🚀" }
   ];
 
   return (
@@ -39,17 +39,17 @@ export default function Home() {
           <div className="hero-text">
             <div className="hero-badge">
               <span className="badge-dot"></span>
-              Microsoft Dynamics 365 Specialists
+              Microsoft Cloud & ERP Experts
             </div>
             <h1>
-              Build the ERP That Powers Your <span className="text-gradient">Business Future</span>
+              Your Trusted Partner for <span className="text-gradient">Microsoft Licenses</span> & <span className="text-gradient">Business Central</span>
             </h1>
             <p className="hero-subtitle">
-              IP Solutions delivers precision-built Business Central implementations, AL customizations, and deep integrations — helping enterprises operate at their peak.
+              IPSOL Technologies delivers cost-effective Microsoft license provisioning and precision-built Dynamics 365 Business Central implementations to power your enterprise.
             </p>
             <div className="hero-ctas">
               <Link href="/contact" className="btn btn-primary">Book a Free Consultation</Link>
-              <Link href="/services" className="btn btn-ghost">Explore Services →</Link>
+              <Link href="/contact?service=license" className="btn btn-ghost">Get a License Quote →</Link>
             </div>
           </div>
           <div className="hero-visual">
@@ -58,7 +58,7 @@ export default function Home() {
                 <div className="db-dot red"></div>
                 <div className="db-dot yellow"></div>
                 <div className="db-dot green"></div>
-                <span className="db-title">Business Central Dashboard</span>
+                <span className="db-title">IPSOL Technologies Portal</span>
               </div>
               <div className="db-body">
                 <div className="db-sidebar-nav">
@@ -104,11 +104,10 @@ export default function Home() {
       <section className="section">
         <div className="container text-center">
           <p className="section-eyebrow">What We Do</p>
-          <h2 className="mb-2">Transforming Operations with <span className="text-gradient">Intelligent ERP</span></h2>
+          <h2 className="mb-2">Transforming Operations with <span className="text-gradient">Microsoft Solutions</span></h2>
           <p className="text-muted section-subtitle">
-            IP Solutions is a premium Microsoft Dynamics 365 Business Central service provider.
-            We partner with organizations to streamline complex operations, dramatically improve financial visibility,
-            automate tedious workflows, and build an exceedingly scalable ERP foundation.
+            IPSOL Technologies bridges the gap between software acquisition and digital transformation. 
+            We provide optimized Microsoft licensing solutions alongside deep technical expertise in Dynamics 365 Business Central implementation, ensuring you get maximum ROI from your tech stack.
           </p>
         </div>
       </section>
@@ -118,8 +117,8 @@ export default function Home() {
         <div className="container">
           <div className="text-center mb-4">
             <p className="section-eyebrow">Core Services</p>
-            <h2>Everything You Need to <span className="text-gradient">Succeed with BC</span></h2>
-            <p className="text-muted section-subtitle">Comprehensive Business Central capabilities designed specifically for enterprise success.</p>
+            <h2>Everything You Need to <span className="text-gradient">Succeed with Microsoft</span></h2>
+            <p className="text-muted section-subtitle">From cost-effective license provisioning to complex ERP customizations, we have you covered.</p>
           </div>
           <div className="services-grid">
             {services.map((svc, i) => (
@@ -129,7 +128,6 @@ export default function Home() {
                 </div>
                 <h3 className="service-title">{svc.title}</h3>
                 <p className="text-muted service-desc">{svc.desc}</p>
-                <Link href="/services" className="service-link">Learn more →</Link>
                 <div className="card-glow"></div>
               </div>
             ))}
@@ -142,28 +140,28 @@ export default function Home() {
         <div className="why-orb"></div>
         <div className="container why-inner">
           <div className="why-text">
-            <p className="section-eyebrow section-eyebrow-light">Why IP Solutions</p>
-            <h2 style={{ color: 'white' }}>We Don't Just Write Code. <br />We <span style={{ background: 'linear-gradient(90deg, #60a5fa, #a855f7)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Architect Results.</span></h2>
-            <p className="why-desc">Our premium approach ensures scalable, high-quality development that stands the test of time and drives measurable business value.</p>
+            <p className="section-eyebrow section-eyebrow-light">Why IPSOL Technologies</p>
+            <h2 style={{ color: 'white' }}>Licenses & Implementations. <br />Handled <span style={{ background: 'linear-gradient(90deg, #60a5fa, #a855f7)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Expertly.</span></h2>
+            <p className="why-desc">We offer a unified approach: providing the exact Microsoft licenses you need and the elite technical talent required to implement Dynamics 365 Business Central.</p>
             <ul className="check-list">
-              <li>Deep & exclusive Business Central specialization</li>
+              <li>Optimized Microsoft License Provisioning</li>
+              <li>Deep Business Central technical expertise</li>
               <li>Clean, scalable AL development methodology</li>
-              <li>Tailored solutions, never generic templates</li>
-              <li>Transparent milestone-driven delivery</li>
-              <li>Fierce focus on operational efficiency</li>
+              <li>Transparent, cost-effective pricing</li>
+              <li>Continuous advisory and dedicated support</li>
             </ul>
-            <Link href="/why-choose-us" className="btn btn-primary" style={{ marginTop: '2rem', display: 'inline-flex' }}>Discover the IP Difference</Link>
+            <Link href="/contact" className="btn btn-primary" style={{ marginTop: '2rem', display: 'inline-flex' }}>Discover the IPSOL Difference</Link>
           </div>
           <div className="why-visual">
             <div className="why-card glass-dark">
-              <div className="why-card-icon">🎯</div>
-              <h4>Precision-First</h4>
-              <p>Rigorous analysis. Exact execution. Solutions that work flawlessly.</p>
+              <div className="why-card-icon">🤝</div>
+              <h4>Unified Vendor</h4>
+              <p>Buy licenses and build your ERP with a single, trusted technology partner.</p>
             </div>
             <div className="why-card glass-dark" style={{ marginTop: '2rem' }}>
-              <div className="why-card-icon">🤝</div>
-              <h4>Long-term Partnership</h4>
-              <p>We view ourselves as your off-site CTO, providing continuous advisory.</p>
+              <div className="why-card-icon">🎯</div>
+              <h4>Precision-First</h4>
+              <p>Rigorous analysis for license audits and ERP deployments.</p>
             </div>
             <div className="why-card glass-dark">
               <div className="why-card-icon">🚀</div>
@@ -180,7 +178,7 @@ export default function Home() {
           <div className="text-center mb-4">
             <p className="section-eyebrow">Business Impact</p>
             <h2>Tangible <span className="text-gradient">Business Outcomes</span></h2>
-            <p className="text-muted section-subtitle">The return on your ERP investment with our premium delivery framework.</p>
+            <p className="text-muted section-subtitle">The return on your investment with our premium delivery framework.</p>
           </div>
           <div className="outcomes-grid">
             {outcomes.map((out, i) => (
@@ -201,13 +199,13 @@ export default function Home() {
         <div className="cta-orb-2"></div>
         <div className="container text-center">
           <p className="section-eyebrow section-eyebrow-light">Get Started</p>
-          <h2 style={{ color: 'white', marginBottom: '1.5rem' }}>Ready to Transform Your Operations?</h2>
+          <h2 style={{ color: 'white', marginBottom: '1.5rem' }}>Ready to Empower Your Enterprise?</h2>
           <p style={{ color: 'rgba(255,255,255,0.75)', maxWidth: '600px', margin: '0 auto 2.5rem', fontSize: '1.15rem' }}>
-            Let IP Solutions help you safely build, intelligently customize, and aggressively scale your ERP with absolute confidence.
+            Let IPSOL Technologies provide the right Microsoft licenses and the precise Business Central implementation to scale your operations.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <Link href="/contact" className="btn btn-primary">Schedule a Consultation</Link>
-            <Link href="/services" className="btn" style={{ background: 'rgba(255,255,255,0.15)', color: 'white', border: '1px solid rgba(255,255,255,0.3)', backdropFilter: 'blur(4px)' }}>View All Services</Link>
+            <Link href="/contact?service=license" className="btn" style={{ background: 'rgba(255,255,255,0.15)', color: 'white', border: '1px solid rgba(255,255,255,0.3)', backdropFilter: 'blur(4px)' }}>Get a License Quote</Link>
           </div>
         </div>
       </section>
@@ -471,10 +469,10 @@ export default function Home() {
                     border-radius: var(--radius-md);
                     position: relative;
                     overflow: hidden;
-                    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+                    transition: border-color 0.35s ease, box-shadow 0.35s ease, translate 0.35s cubic-bezier(0.4, 0, 0.2, 1);
                 }
                 .glass-card:hover {
-                    transform: translateY(-6px);
+                    translate: 0 -6px;
                     border-color: var(--color-secondary);
                     box-shadow: 0 20px 40px rgba(37, 99, 235, 0.15), var(--shadow-elevation-medium);
                 }
@@ -590,12 +588,12 @@ export default function Home() {
                     border: 1px solid rgba(255,255,255,0.1);
                     border-radius: var(--radius-md);
                     padding: 1.75rem;
-                    transition: all 0.3s ease;
+                    transition: background 0.3s ease, border-color 0.3s ease, translate 0.3s ease;
                 }
                 .glass-dark:hover {
                     background: rgba(255,255,255,0.1);
                     border-color: rgba(99,102,241,0.5);
-                    transform: translateX(6px);
+                    translate: 6px 0;
                 }
                 .why-card-icon {
                     font-size: 2rem;

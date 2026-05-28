@@ -24,7 +24,7 @@ export default function WhyChooseUs() {
         <div className="orb-1"></div><div className="orb-2"></div>
         <div className="container text-center animate-fade-in" style={{ position: 'relative', zIndex: 1 }}>
           <p className="eyebrow">The IP Advantage</p>
-          <h1 style={{ color: 'white' }}>Why <span className="text-grad">IP Solutions</span>?</h1>
+          <h1 style={{ color: 'white' }}>Why <span className="text-grad">IPSOL Technologies</span>?</h1>
           <p className="page-sub">Why discerning organizations trust us as their dedicated Microsoft Dynamics 365 Business Central partner.</p>
         </div>
       </section>

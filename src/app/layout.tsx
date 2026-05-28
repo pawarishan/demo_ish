@@ -2,11 +2,12 @@ import type { Metadata } from 'next';
 import './globals.css';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import FloatingWhatsApp from '../components/FloatingWhatsApp';
 import { ThemeProvider } from '../components/ThemeProvider';
 
 export const metadata: Metadata = {
-    title: 'IP Solutions | Premium Dynamics 365 Business Central Experts',
-    description: 'IP Solutions helps businesses implement, customize, integrate, migrate, and support Microsoft Dynamics 365 Business Central with scalable ERP solutions.',
+    title: 'IPSOL Technologies | Your Trusted Partner for Microsoft Licenses & Business Central Solutions',
+    description: 'IPSOL Technologies helps businesses buy the right Microsoft licenses and implement Microsoft Dynamics 365 Business Central with clean, scalable, and business-focused solutions.',
 };
 
 export default function RootLayout({
@@ -28,6 +29,7 @@ export default function RootLayout({
                         {children}
                     </main>
                     <Footer />
+                    <FloatingWhatsApp />
                 </ThemeProvider>
             </body>
         </html>

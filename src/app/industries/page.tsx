@@ -25,7 +25,7 @@ export default function Industries() {
       <section className="section">
         <div className="container">
           <p className="text-center text-muted intro-text">
-            A truly powerful ERP system is one that speaks the language of your industry natively. IP Solutions architects Microsoft Dynamics 365 Business Central environments specifically around the nuanced demands of the following sectors.
+            A truly powerful ERP system is one that speaks the language of your industry natively. IPSOL Technologies architects Microsoft Dynamics 365 Business Central environments specifically around the nuanced demands of the following sectors.
           </p>
           <div className="industries-grid">
             {industries.map((ind, i) => (
@@ -105,10 +105,10 @@ export default function Industries() {
                     border: 1px solid var(--glass-border);
                     border-radius: var(--radius-md);
                     position: relative; overflow: hidden;
-                    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+                    transition: border-color 0.35s ease, box-shadow 0.35s ease, translate 0.35s cubic-bezier(0.4, 0, 0.2, 1);
                 }
                 .ind-card:hover {
-                    transform: translateY(-6px);
+                    translate: 0 -6px;
                     border-color: var(--accent, var(--color-secondary));
                     box-shadow: 0 20px 40px rgba(0,0,0,0.1);
                 }

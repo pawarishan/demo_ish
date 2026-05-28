@@ -3,9 +3,9 @@
 import { useState } from 'react';
 
 const contactDetails = [
-    { icon: "📧", label: "Email Us", value: "info@ipsol.co.in", sub: "We respond within 24 hours." },
-    { icon: "📞", label: "Call Us", value: "+(91) 9560415235", sub: "Mon–Fri, 9am–6pm IST." },
-    { icon: "🏢", label: "Headquarters", value: "JMD Megapolis, Sohna Road", sub: "Gurugram, Haryana" },
+    { icon: "📧", label: "Email Us", value: "pawarishant@gmail.com", sub: "We respond within 24 hours." },
+    { icon: "📞", label: "Call Us", value: "+(91) 8800685189", sub: "Mon–Fri, 9am–6pm IST." },
+    { icon: "🏢", label: "Headquarters", value: "Santomalan, Najibabad", sub: "District Bijnor, UP" },
 ];
 
 export default function Contact() {
@@ -22,7 +22,7 @@ export default function Contact() {
         setIsSubmitting(true);
         setStatus({ type: '', message: '' });
         try {
-            const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/contact`, {
+            const res = await fetch(`/api/contact`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData)
@@ -49,7 +49,7 @@ export default function Contact() {
                 <div className="container text-center animate-fade-in" style={{ position: 'relative', zIndex: 1 }}>
                     <p className="eyebrow">Let's Talk</p>
                     <h1 style={{ color: 'white' }}>Get in Touch With <span className="text-grad">an Expert</span></h1>
-                    <p className="page-sub">Schedule a consultation to discuss how IP Solutions can transform your business operations.</p>
+                    <p className="page-sub">Schedule a consultation to discuss how IPSOL Technologies can transform your business operations.</p>
                 </div>
             </section>
 

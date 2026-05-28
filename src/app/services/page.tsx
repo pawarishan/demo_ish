@@ -106,11 +106,11 @@ export default function Services() {
                     border: 1px solid var(--glass-border);
                     border-radius: var(--radius-md);
                     position: relative; overflow: hidden;
-                    transition: all 0.3s ease;
+                    transition: border-color 0.3s ease, box-shadow 0.3s ease, translate 0.3s ease;
                     scroll-margin-top: 100px;
                 }
                 .svc-row:hover {
-                    transform: translateY(-4px);
+                    translate: 0 -4px;
                     border-color: var(--color-secondary);
                     box-shadow: 0 20px 40px rgba(37, 99, 235, 0.1);
                 }

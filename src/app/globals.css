@@ -4,10 +4,10 @@
 
 :root {
   /* LIGHT THEME (Default) */
-  --color-base: #ffffff;
-  --color-base-alt: #f8fafc;
+  --color-base: #f0f4f8; /* Soft blue-gray base instead of empty white */
+  --color-base-alt: #e2e8f0; /* Slightly darker alt background */
   /* Very subtle blue-gray */
-  --color-base-surface: #ffffff;
+  --color-base-surface: #ffffff; /* White cards for contrast */
 
   --color-primary: #0f172a;
   /* Deep Slate (almost black) */
@@ -20,14 +20,14 @@
 
   --color-text: #0f172a;
   /* Slate 900 */
-  --color-text-muted: #64748b;
-  /* Slate 500 */
+  --color-text-muted: #475569;
+  /* Slate 600 for better contrast */
 
-  --color-border: #e2e8f0;
-  /* Slate 200 */
-  --color-border-subtle: #f1f5f9;
+  --color-border: #cbd5e1;
+  /* Slate 300 */
+  --color-border-subtle: #e2e8f0;
 
-  --shadow-color: 0deg 0% 0%;
+  --shadow-color: 220deg 20% 40%; /* slightly bluish shadow for light mode */
   --shadow-elevation-low:
     0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.09),
     0.4px 0.8px 1px -1.2px hsl(var(--shadow-color) / 0.09),
@@ -48,8 +48,19 @@
     25px 50px 62.9px -2.5px hsl(var(--shadow-color) / 0.09);
 
   --gradient-primary: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-accent) 100%);
-  --glass-bg: rgba(255, 255, 255, 0.7);
-  --glass-border: rgba(255, 255, 255, 0.5);
+  --glass-bg: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 252, 0.85) 100%);
+  --glass-border: rgba(255, 255, 255, 1);
+  
+  --nav-bg: rgba(255, 255, 255, 0.95); /* Mostly solid, letting only ambient background bleed through */
+  --nav-border: rgba(255, 255, 255, 0.8);
+
+  --orb-opacity: 0.9;
+  --blend-mode: multiply; /* Multiplies colors for deep vibrancy in light mode */
+
+  --grid-color-1: #3b82f6;
+  --grid-color-2: #8b5cf6;
+  --grid-color-3: #ec4899;
+  --grid-opacity: 0.4;
 
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
 
@@ -107,8 +118,19 @@
     0px 20px 40px -10px rgba(0, 0, 0, 0.7);
 
   --gradient-primary: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-accent) 100%);
-  --glass-bg: rgba(15, 23, 42, 0.6);
+  --glass-bg: linear-gradient(135deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.6) 100%);
   --glass-border: rgba(255, 255, 255, 0.08);
+  
+  --nav-bg: rgba(15, 23, 42, 0.95); /* Mostly solid for dark mode */
+  --nav-border: rgba(255, 255, 255, 0.1);
+  
+  --orb-opacity: 0.4;
+  --blend-mode: screen;
+
+  --grid-color-1: #60a5fa;
+  --grid-color-2: #a78bfa;
+  --grid-color-3: #f472b6;
+  --grid-opacity: 0.2;
 }
 
 /* ==========================================================================
@@ -128,6 +150,40 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transition: background-color 0.4s ease, color 0.4s ease;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Fading Gradient Grid */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  background: linear-gradient(135deg, var(--grid-color-1) 0%, var(--grid-color-2) 50%, var(--grid-color-3) 100%);
+  -webkit-mask-image: 
+    linear-gradient(to right, black 1px, transparent 1px),
+    linear-gradient(to bottom, black 1px, transparent 1px);
+  -webkit-mask-size: 60px 60px;
+  mask-image: 
+    linear-gradient(to right, black 1px, transparent 1px),
+    linear-gradient(to bottom, black 1px, transparent 1px);
+  mask-size: 60px 60px;
+  opacity: var(--grid-opacity);
+}
+
+/* Fade the grid out towards the edges and add ambient glows */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: 
+    radial-gradient(ellipse at top right, rgba(37, 99, 235, 0.25) 0%, transparent 60%),
+    radial-gradient(ellipse at bottom left, rgba(139, 92, 246, 0.25) 0%, transparent 60%),
+    radial-gradient(circle at center, transparent 30%, var(--color-base) 100%);
 }
 
 a {

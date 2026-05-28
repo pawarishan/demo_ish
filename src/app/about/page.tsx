@@ -16,7 +16,7 @@ export default function About() {
         <div className="ph-orb-1"></div><div className="ph-orb-2"></div>
         <div className="container text-center animate-fade-in">
           <p className="eyebrow">Our Story</p>
-          <h1 style={{ color: 'white' }}>About <span className="text-grad">IP Solutions</span></h1>
+          <h1 style={{ color: 'white' }}>About <span className="text-grad">IPSOL Technologies</span></h1>
           <p className="page-subtitle">Elevating enterprise operations through intelligent, tailored, and scalable ERP solutions.</p>
         </div>
       </section>
@@ -28,7 +28,7 @@ export default function About() {
             <p className="eyebrow-dark">Our Identity</p>
             <h2>Who We Are</h2>
             <p className="text-muted text-lg mb-2">
-              IP Solutions is a premier technology consulting firm specializing exclusively in Microsoft Dynamics 365 Business Central. We are a team of veteran architects, developers, and business analysts dedicated to transforming complex operational challenges into streamlined, automated workflows.
+              IPSOL Technologies is a premier technology consulting firm specializing exclusively in Microsoft Dynamics 365 Business Central. We are a team of veteran architects, developers, and business analysts dedicated to transforming complex operational challenges into streamlined, automated workflows.
             </p>
             <p className="text-muted text-lg">
               Unlike generic agencies that spread thin across dozens of platforms, our intense focus on Business Central allows us to deliver unparalleled depth of expertise — we understand the commercial realities of manufacturing, distribution, retail, and professional services.
@@ -72,7 +72,7 @@ export default function About() {
         <div className="container text-center" style={{ position: 'relative', zIndex: 1 }}>
           <h2 style={{ color: 'white', marginBottom: '1rem' }}>Ready to optimize your business operations?</h2>
           <p style={{ color: 'rgba(255,255,255,0.75)', maxWidth: '560px', margin: '0 auto 2rem', fontSize: '1.05rem' }}>
-            Partner with IP Solutions for an enterprise-grade ERP implementation that drives your business forward.
+            Partner with IPSOL Technologies for an enterprise-grade ERP implementation that drives your business forward.
           </p>
           <Link href="/contact" className="btn btn-primary">Schedule a Consultation</Link>
         </div>

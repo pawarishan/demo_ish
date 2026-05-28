@@ -8,9 +8,12 @@ export default function Footer() {
       <div className="container">
         <div className="footer-grid">
           <div className="footer-brand">
-            <h3 className="footer-logo">IP Solutions</h3>
+            <h3 className="footer-logo">IPSOL Technologies</h3>
+            <p className="footer-desc" style={{ marginBottom: '1rem', fontWeight: '500' }}>
+              Microsoft Licenses & Business Central Solutions
+            </p>
             <p className="footer-desc">
-              Helping businesses implement, customize, integrate, migrate, and support Microsoft Dynamics 365 Business Central with scalable ERP solutions.
+              Helping businesses buy the right Microsoft licenses and implement Microsoft Dynamics 365 Business Central with clean, scalable, and business-focused solutions.
             </p>
           </div>
 
@@ -18,9 +21,12 @@ export default function Footer() {
             <h4>Quick Links</h4>
             <ul>
               <li><Link href="/">Home</Link></li>
+              <li><Link href="/microsoft-licenses">Microsoft Licenses</Link></li>
+              <li><Link href="/business-central">Business Central</Link></li>
+              <li><Link href="/services">Services</Link></li>
+              <li><Link href="/industries">Industries</Link></li>
               <li><Link href="/about">About Us</Link></li>
               <li><Link href="/why-choose-us">Why Choose Us</Link></li>
-              <li><Link href="/faq">FAQ</Link></li>
               <li><Link href="/contact">Contact</Link></li>
             </ul>
           </div>
@@ -28,18 +34,21 @@ export default function Footer() {
           <div className="footer-links">
             <h4>Services</h4>
             <ul>
-              <li><Link href="/services#implementation">D365 Implementation</Link></li>
-              <li><Link href="/services#customization">AL Development</Link></li>
-              <li><Link href="/services#integrations">API Integrations</Link></li>
-              <li><Link href="/services#migration">NAV Upgrades</Link></li>
+              <li><Link href="/microsoft-licenses">Microsoft 365 Licenses</Link></li>
+              <li><Link href="/microsoft-licenses">Dynamics 365 Licenses</Link></li>
+              <li><Link href="/microsoft-licenses">Azure Services</Link></li>
+              <li><Link href="/business-central">Business Central Implementation</Link></li>
+              <li><Link href="/business-central">AL Development</Link></li>
+              <li><Link href="/business-central">API Integrations</Link></li>
+              <li><Link href="/business-central">Support & Maintenance</Link></li>
             </ul>
           </div>
 
           <div className="footer-contact">
             <h4>Contact Us</h4>
-            <p>Email: info@ipsol.co.in</p>
-            <p>Phone: +(91) 9560415235</p>
-            <p>Address: JMD Megapolis, Sohna Road<br />Gurugram, Haryana</p>
+            <p>Email: pawarishant@gmail.com</p>
+            <p>Phone: +(91) 8800685189</p>
+            <p>Address: Santomalan, Najibabad<br />District Bijnor, UP</p>
             <div className="social-icons">
               <div className="icon">in</div>
               <div className="icon">tw</div>
@@ -48,8 +57,12 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} IP Solutions. All rights reserved.</p>
+        <div className="footer-bottom" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' }}>
+          <div style={{ background: 'var(--color-base-alt)', padding: '1.5rem', borderRadius: 'var(--radius-lg)', width: '100%', maxWidth: '800px', border: '1px solid var(--color-border)', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
+            <p style={{ margin: 0, fontWeight: '600', color: 'var(--color-text)' }}>Need Microsoft licenses or Business Central support?</p>
+            <a href="https://wa.me/918800685189?text=Hi%20IPSOL%20Technologies,%20I%20am%20interested%20in%20Microsoft%20licenses%20/%20Business%20Central%20services.%20Please%20contact%20me." target="_blank" rel="noopener noreferrer" className="btn" style={{ background: '#25D366', color: 'white', padding: '0.5rem 1rem', fontSize: '0.9rem' }}>Chat with us on WhatsApp</a>
+          </div>
+          <p>&copy; {new Date().getFullYear()} IPSOL Technologies. All rights reserved.</p>
         </div>
       </div>
 
