@@ -194,14 +194,14 @@ export default function Navbar() {
           gap: 2rem;
 
           width: 100%;
-          max-width: 1550px;
+          max-width: 100%;
 
           min-height: 60px;
 
           margin: 0 auto;
 
-          padding-left: 2rem;
-          padding-right: 2rem;
+          padding-left: 4rem;
+          padding-right: 4rem;
         }
 
         /* =========================================
@@ -302,7 +302,7 @@ export default function Navbar() {
 
           padding: 0.3rem 0;
 
-          white-space: nowrap;
+          white-space: nowrap !important;
         }
 
         .nav-links a:hover {
@@ -416,6 +416,12 @@ export default function Navbar() {
 
           .logo-tagline {
             display: none;
+          }
+        }
+
+        @media (max-width: 1280px) {
+          .hide-mobile {
+            display: none !important;
           }
         }
 

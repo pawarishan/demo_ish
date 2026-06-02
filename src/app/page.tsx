@@ -54,11 +54,15 @@ export default function Home() {
           </div>
           <div className="hero-visual">
             <div className="dashboard-glass">
-              <div className="db-topbar">
+              <div className="db-topbar" style={{ display: 'flex', alignItems: 'center', width: '100%' }}>
                 <div className="db-dot red"></div>
                 <div className="db-dot yellow"></div>
                 <div className="db-dot green"></div>
                 <span className="db-title">IPSOL Technologies Portal</span>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginLeft: 'auto' }}>
+                  <span className="live-dot"></span>
+                  <span style={{ fontSize: '0.65rem', color: '#10b981', fontWeight: 600, letterSpacing: '0.5px' }}>LIVE</span>
+                </div>
               </div>
               <div className="db-body">
                 <div className="db-sidebar-nav">
@@ -213,10 +217,10 @@ export default function Home() {
       <style jsx>{`
                 /* ---- Hero ---- */
                 .hero {
-                    min-height: 100vh;
+                    min-height: auto;
                     display: flex;
                     align-items: center;
-                    padding: 8rem 0 6rem;
+                    padding: 4rem 0 6rem;
                     position: relative;
                     overflow: hidden;
                     background: var(--color-base);
@@ -341,7 +345,7 @@ export default function Home() {
                 }
                 .db-body {
                     display: flex;
-                    height: 320px;
+                    height: 380px;
                 }
                 .db-sidebar-nav {
                     width: 56px;
@@ -379,7 +383,7 @@ export default function Home() {
                     border: 1px solid var(--color-border);
                     border-radius: 8px;
                     padding: 12px;
-                    height: 56px;
+                    height: 64px;
                     display: flex;
                     align-items: flex-end;
                 }
@@ -409,6 +413,79 @@ export default function Home() {
                 .db-bar:nth-child(even) {
                     background: linear-gradient(to top, #a855f7, rgba(168,85,247,0.3));
                 }
+
+                /* Live Dashboard Animations */
+                .live-dot {
+                    width: 8px;
+                    height: 8px;
+                    background-color: #10b981;
+                    border-radius: 50%;
+                    box-shadow: 0 0 8px #10b981;
+                    animation: pulseGreen 2s infinite;
+                }
+                @keyframes pulseGreen {
+                    0% {
+                        transform: scale(0.9);
+                        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+                    }
+                    70% {
+                        transform: scale(1.1);
+                        box-shadow: 0 0 0 8px rgba(16, 185, 129, 0);
+                    }
+                    100% {
+                        transform: scale(0.9);
+                        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+                    }
+                }
+
+                @keyframes liveBar1 {
+                    0%, 100% { height: 40%; }
+                    50% { height: 75%; }
+                }
+                @keyframes liveBar2 {
+                    0%, 100% { height: 70%; }
+                    50% { height: 35%; }
+                }
+                @keyframes liveBar3 {
+                    0%, 100% { height: 55%; }
+                    50% { height: 90%; }
+                }
+                @keyframes liveBar4 {
+                    0%, 100% { height: 90%; }
+                    50% { height: 55%; }
+                }
+                @keyframes liveBar5 {
+                    0%, 100% { height: 65%; }
+                    50% { height: 85%; }
+                }
+                @keyframes liveBar6 {
+                    0%, 100% { height: 80%; }
+                    50% { height: 45%; }
+                }
+                
+                .db-bar:nth-child(1) { animation: liveBar1 4.2s ease-in-out infinite; }
+                .db-bar:nth-child(2) { animation: liveBar2 3.5s ease-in-out infinite; }
+                .db-bar:nth-child(3) { animation: liveBar3 4.8s ease-in-out infinite; }
+                .db-bar:nth-child(4) { animation: liveBar4 5.2s ease-in-out infinite; }
+                .db-bar:nth-child(5) { animation: liveBar5 3.9s ease-in-out infinite; }
+                .db-bar:nth-child(6) { animation: liveBar6 4.5s ease-in-out infinite; }
+
+                @keyframes liveStat1 {
+                    0%, 100% { width: 70%; }
+                    50% { width: 90%; }
+                }
+                @keyframes liveStat2 {
+                    0%, 100% { width: 55%; }
+                    50% { width: 80%; }
+                }
+                @keyframes liveStat3 {
+                    0%, 100% { width: 85%; }
+                    50% { width: 60%; }
+                }
+                
+                .db-stat-cards .db-stat-card:nth-child(1) .db-stat-bar { animation: liveStat1 5s ease-in-out infinite; }
+                .db-stat-cards .db-stat-card:nth-child(2) .db-stat-bar { animation: liveStat2 4.2s ease-in-out infinite; }
+                .db-stat-cards .db-stat-card:nth-child(3) .db-stat-bar { animation: liveStat3 4.8s ease-in-out infinite; }
 
                 /* ---- Stats Bar ---- */
                 .stats-bar {
