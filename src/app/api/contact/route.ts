@@ -4,7 +4,7 @@ import connectToDatabase from '@/lib/mongodb';
 import Contact from '@/models/Contact';
 
 // Initialize Resend with env variable, fallback to hardcoded if not provided for now, but recommend env
-const resend = new Resend(process.env.RESEND_API_KEY || 're_G2Gk1HVq_MWU2rUBpX45J1KCu6RcidkpQ');
+const resend = new Resend(process.env.RESEND_API_KEY || 're_gLYr3LQt_AgAyER6xrZSTk2ERbuwMmHdf');
 
 export async function POST(request: Request) {
   try {
@@ -34,7 +34,7 @@ export async function POST(request: Request) {
 
     const { data, error } = await resend.emails.send({
       from: 'Acme <onboarding@resend.dev>',
-      to: ['aditsharma2005.vs@gmail.com'],
+      to: ['pawarishant@gmail.com'],
       subject: `New Lead: ${name} from ${company || 'Website'}`,
       html: htmlContent,
     });
