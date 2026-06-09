@@ -10,6 +10,12 @@ export const metadata: Metadata = {
     description: 'IPSOL Technologies helps businesses buy the right Microsoft licenses and implement Microsoft Dynamics 365 Business Central with clean, scalable, and business-focused solutions.',
 };
 
+export const viewport = {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 1,
+};
+
 export default function RootLayout({
     children,
 }: {
